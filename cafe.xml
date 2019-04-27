@@ -1,7 +1,20 @@
 <?xml version='1.0' encoding='ISO-8859-2'?>
-
+<?xml-stylesheet type="text/css" href="style.css" ?>
   <cafe>
           <menu>
+                  <item price='4.00'>
+
+                            <drink>
+
+                              <kawa>Espresso</kawa>
+
+                              <ml priceinc='0.00'>200</ml>
+
+
+                            </drink>
+
+                  </item>
+
                   <item price='6.00'>
 
                             <drink>
@@ -15,6 +28,19 @@
                             </drink>
 
                   </item>
+
+                  <item price='10.00'>
+
+                            <drink>
+
+                              <kawa>Cafe Latte Macchiato</kawa>
+
+                              <ml priceinc='0.00'>300</ml>
+                              <ml priceinc='3.00'>400</ml>
+
+                            </drink>
+
+                  </item>
           </menu>
 
         <pracownik id="00001">
@@ -23,7 +49,7 @@
 
                   <nazwisko>Tuzin</nazwisko>
 
-                  <stanowisko>właściciel</stanowisko>
+                  <stanowisko>Wlasciciel</stanowisko>
 
                   <adres>
                       <miejsce>Gdynia</miejsce>
@@ -46,6 +72,35 @@
                   <pensja>5000</pensja>
 
         </pracownik>
+        <pracownik id="00010">
 
+                  <imie>Marta</imie>
+
+                  <nazwisko>Tuzin</nazwisko>
+
+                  <stanowisko>barista</stanowisko>
+
+                  <adres>
+                      <miejsce>Gdynia</miejsce>
+
+                      <kodpocztowy>20-200</kodpocztowy>
+
+                      <ulica>Rosocka</ulica>
+
+                      <numer>12</numer>
+
+                  </adres>
+
+                  <kontakt>
+
+                    <email>mtuzin@gmail.com</email>
+                    <email>allweretaken3434@gmail.com</email>
+                    <tel>2323234</tel>
+
+                  </kontakt>
+
+                  <pensja>3000</pensja>
+
+        </pracownik>
 
   </cafe>
