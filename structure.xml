@@ -1,0 +1,109 @@
+<?xml version='1.0' encoding='ISO-8859-2'?>
+
+  <cafe>
+          <menu>
+                  <item price>
+
+                          <!--
+
+                            do zrobienia: restrykcja by tylko JEDEN z ponizszych elementow (lub podelementow) mogl wystepowac w jednym itemie
+                              generalnie powinny one na razie zawierac tylko nazwe produktu.
+                          -->
+                          <drink>
+                            <!--
+                              drink nie moze miec simple content!
+                            -->
+                              <kawa>
+
+
+
+                              </kawa>
+
+                              <herbata>
+
+
+
+                              </herbata>
+
+                              <inne>
+
+                              </inne>
+
+                              <ml priceinc>
+                                <!--
+                                  max 3 opcje objetosci napoju w ml ++jak cena sie zmienia wzwyz
+                                -->
+                              </ml>
+
+                        </drink>
+
+
+                              <food>
+                                <!--
+                                  food nie moze miec simple content!
+                                -->
+                                    <dezert>
+                                    </dezert>
+
+                                    <inne>
+                                    </inne>
+
+                              </food>
+
+                  </item>
+          </menu>
+
+        <pracownik id>
+
+                  <imie>
+                  </imie>
+
+                  <nazwisko>
+                  </nazwisko>
+
+                  <stanowisko>
+                  </stanowisko>
+
+                  <adres>
+                      <miejsce>
+                      </miejsce>
+
+                      <kodpocztowy>
+                      </kodpocztowy>
+
+                      <ulica>
+                      </ulica>
+
+                      <numer>
+                      </numer>
+                      <!--
+                        numermieszkania nie jest obowiazkowy
+                      -->
+                      <numermieszkania>
+                      </numermieszkania>
+
+                  </adres>
+
+                  <kontakt>
+
+                    <email>
+
+                    </email>
+                    <tel>
+                      <!--
+                      maks 3 tel
+                      -->
+                    </tel>
+
+                  </kontakt>
+
+                  <pensja>
+                    <!--
+                    brutto
+                    -->
+                  </pensja>
+
+        </pracownik>
+
+
+  </cafe>

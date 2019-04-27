@@ -2,110 +2,50 @@
 
   <cafe>
           <menu>
-                  <item price>
+                  <item price='6.00'>
 
-                          <!--
+                            <drink>
 
-                            do zrobienia: restrykcja by tylko JEDEN z ponizszych elementow (lub podelementow) mogl wystepowac w jednym itemie
-                              generalnie powinny one na razie zawierac tylko nazwe produktu.
-                          -->
-                          <drink>
-                            <!--
-                              drink nie moze miec simple content!
-                            -->
-                              <kawa>
+                              <kawa>Cafe Latte</kawa>
 
+                              <ml priceinc='0.00'>200</ml>
+                              <ml priceinc='3.00'>300</ml>
+                              <ml priceinc='5.00'>400</ml>
 
-
-                              </kawa>
-
-                              <herbata>
-
-
-
-                              </herbata>
-
-                              <inne>
-
-                              </inne>
-
-                              <ml>
-                                <!--
-                                  max 3 opcje objetosci napoju w ml
-                                -->
-                              </ml>
-
-                        </drink>
-
-
-                              <food>
-                                <!--
-                                  food nie moze miec simple content!
-                                -->
-                                    <dezert>
-                                    </dezert>
-
-                                    <inne>
-                                    </inne>
-
-                              </food>
+                            </drink>
 
                   </item>
           </menu>
 
-        <pracownik id>
+        <pracownik id="00001">
 
-                  <imie>
-                  </imie>
+                  <imie>Monika</imie>
 
-                  <nazwisko>
-                  </nazwisko>
+                  <nazwisko>Tuzin</nazwisko>
 
-                  <stanowisko>
-                  </stanowisko>
+                  <stanowisko>właściciel</stanowisko>
 
                   <adres>
-                      <miejsce>
-                      </miejsce>
+                      <miejsce>Gdynia</miejsce>
 
-                      <kodpocztowy>
-                      </kodpocztowy>
+                      <kodpocztowy>20-200</kodpocztowy>
 
-                      <ulica>
-                      </ulica>
+                      <ulica>Rosocka</ulica>
 
-                      <numer>
-                      </numer>
-                      <!--
-                        numermieszkania nie jest obowiazkowy
-                      -->
-                      <numermieszkania>
-                      </numermieszkania>
+                      <numer>12</numer>
 
                   </adres>
 
                   <kontakt>
 
-                    <email>
-
-                    </email>
-                    <tel>
-                      <!--
-                      maks 3 tel
-                      -->
-                    </tel>
+                    <email>monikatuzin@gmail.com</email>
+                    <tel>34883958</tel>
 
                   </kontakt>
 
-                  <pensja>
-                    <!--
-                    brutto
-                    -->
-                  </pensja>
+                  <pensja>5000</pensja>
 
         </pracownik>
 
 
   </cafe>
-
-</myszki>
