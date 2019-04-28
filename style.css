@@ -1,48 +1,63 @@
 cafe{
-
+  display: flex;
+  flex-direction: row;
   font-family: Verdana, Arial;
   padding:5%;
   margin:5%;
+  background-color: #28313E;
 }
 
 menu{
-    background-color: #F1F1F1;
-    float:left;
-    text-align: center;
-    padding:1%;
-    margin:1%;
-    width:48%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  background-color: #F1F1F1;
+  padding:1%;
+  margin:1%;
+  width:50%;
 }
 
 item{
-text-align: center;
-display: block;
-width:28%;
-border: 1px solid black;
-padding:1%;
-margin:1%;
-float:left;
-background-color: #F0F8FF;
+  word-wrap: break-word;
+  display: block;
+  float: center;
+  text-align: center;
+  width:28%;
+  border: 1px solid black;
+  padding:1%;
+  margin:1%;
+  float:left;
+
 }
 
-pracownik{
-text-align: center;
-display: block;
-float:left;
-width: 48%
-border: 1px solid black;
-padding:1%;
-margin:1%;
-background-color: #F0F8FF;
+pracownicy{
+  display: flex;
+  flex-direction: row;
+  text-align: center;
+  flex-wrap: wrap;
+  width: 50%;
+  padding:1%;
+  margin:1%;
+  justify-content: center;
 }
 
 pracownik>imie,pracownik>nazwisko,pracownik>stanowisko,pracownik>kontakt,pracownik>adres,pracownik>pensja
 {
+  word-wrap: break-word;
+  display: block;
+  float: center;
   font-size: 12px;
   text-align: center;
-  display: block;
-  width: 33.33%
+  width: 90%;
   border: 1px solid black;
   padding:1%;
   margin:1%;
+}
+
+pracownik{
+  border: 1px solid black;
+  width: 33.33%;
+  padding:1%;
+  margin:1%;
+  background-color: #F0F8FF;
 }

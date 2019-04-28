@@ -42,7 +42,7 @@
 
                   </item>
           </menu>
-
+    <pracownicy>
         <pracownik id="00001">
 
                   <imie>Monika</imie>
@@ -102,5 +102,5 @@
                   <pensja>3000</pensja>
 
         </pracownik>
-
+  </pracownicy>      
   </cafe>
