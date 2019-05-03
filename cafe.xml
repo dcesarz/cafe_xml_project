@@ -1,5 +1,6 @@
 <?xml version='1.0' encoding='ISO-8859-2'?>
 <?xml-stylesheet type="text/css" href="style.css" ?>
+<!DOCTYPE cafe SYSTEM "dtdfile.dtd">
   <cafe>
           <menu>
                   <item price='4.00'>
