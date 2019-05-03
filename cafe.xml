@@ -41,6 +41,19 @@
                             </drink>
 
                   </item>
+
+                  <item price='10.00'>
+
+                            <drink>
+
+                              <kawa>Frappe</kawa>
+
+                              <ml priceinc='0.00'>300</ml>
+                              <ml priceinc='3.00'>400</ml>
+
+                            </drink>
+
+                  </item>
           </menu>
     <pracownicy>
         <pracownik id="00001">
@@ -102,5 +115,35 @@
                   <pensja>3000</pensja>
 
         </pracownik>
-  </pracownicy>      
+        <pracownik id="00011">
+
+                  <imie>Norman</imie>
+
+                  <nazwisko>Koc</nazwisko>
+
+                  <stanowisko>barista</stanowisko>
+
+                  <adres>
+                      <miejsce>Gdynia</miejsce>
+
+                      <kodpocztowy>20-200</kodpocztowy>
+
+                      <ulica>Lysicka</ulica>
+
+                      <numer>122</numer>
+
+                  </adres>
+
+                  <kontakt>
+
+                    <email>kkoc@gmail.com</email>
+                    <email>moremails@gmail.com</email>
+                    <tel>2323234</tel>
+                    <tel>2324433</tel>
+                  </kontakt>
+
+                  <pensja>2500</pensja>
+
+        </pracownik>
+  </pracownicy>
   </cafe>
