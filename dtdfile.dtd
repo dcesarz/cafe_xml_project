@@ -1,6 +1,0 @@
-<?xml version='1.0' encoding='UTF-8'?>
-<!ENTITY % el3 "menu">
-<!ENTITY % el2 "pracownicy">
-
-
-<!ELEMENT cafe (%el1;,%el2;)>

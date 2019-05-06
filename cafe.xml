@@ -1,7 +1,38 @@
 <?xml version='1.0' encoding='ISO-8859-2'?>
-<?xml-stylesheet type="text/css" href="style.css" ?>
-<!DOCTYPE cafe SYSTEM "dtdfile.dtd">
-  <cafe>
+<!DOCTYPE cafe [
+        <!ELEMENT cafe (menu|pracownicy)*>
+            <!ELEMENT menu (item)*>
+                <!ELEMENT item (drink|food)*>
+                <!ATTLIST item
+                        price CDATA #REQUIRED>
+                <!ELEMENT drink (kawa|ml|innedrink|herbata)*>
+                    <!ELEMENT kawa (#PCDATA)>
+                    <!ELEMENT ml (#PCDATA)>
+                    <!ATTLIST ml
+                            priceinc CDATA #REQUIRED>
+                    <!ELEMENT innedrink (#PCDATA)>
+                    <!ELEMENT herbata (#PCDATA)>
+                <!ELEMENT food (dezert|innefood)*>
+                    <!ELEMENT dezert (#PCDATA)>
+                    <!ELEMENT innefood (#PCDATA)>
+            <!ELEMENT pracownicy (pracownik)*>
+                <!ELEMENT pracownik (imie|nazwisko|stanowisko|adres|kontakt|pensja)*>
+                <!ATTLIST pracownik
+                        id CDATA #REQUIRED>
+                <!ELEMENT imie (#PCDATA)>
+                <!ELEMENT nazwisko (#PCDATA)>
+                <!ELEMENT stanowisko (#PCDATA)>
+                <!ELEMENT adres (miejsce|kodpocztowy|ulica|numer)*>
+                    <!ELEMENT miejsce (#PCDATA)>
+                    <!ELEMENT kodpocztowy (#PCDATA)>
+                    <!ELEMENT ulica (#PCDATA)>
+                    <!ELEMENT numer (#PCDATA)>
+                    <!ELEMENT kontakt (email|tel)*>
+                    <!ELEMENT email (#PCDATA)>
+                    <!ELEMENT tel (#PCDATA)>
+                <!ELEMENT pensja (#PCDATA)>
+        ]>
+<cafe>
           <menu>
                   <item price='4.00'>
 
@@ -9,7 +40,7 @@
 
                               <kawa>Espresso</kawa>
 
-                              <ml priceinc='0.00'>200</ml>
+                              <ml priceinc='0.00'>150</ml>
 
 
                             </drink>
@@ -55,6 +86,75 @@
                             </drink>
 
                   </item>
+
+              <item price='10.00'>
+
+                  <drink>
+
+                      <innedrink>Kakao</innedrink>
+
+                      <ml priceinc='0.00'>300</ml>
+                      <ml priceinc='2.00'>400</ml>
+
+                  </drink>
+
+              </item>
+
+              <item price='8.00'>
+
+                  <drink>
+
+                      <herbata>Earl Gray</herbata>
+
+                      <ml priceinc='0.00'>300</ml>
+                      <ml priceinc='2.00'>400</ml>
+
+                  </drink>
+
+
+              </item>
+
+              <item price='10.00'>
+
+                  <drink>
+
+                      <herbata>Herbata z miodem i cynamonem</herbata>
+
+                      <ml priceinc='0.00'>300</ml>
+                      <ml priceinc='2.00'>400</ml>
+
+                  </drink>
+
+
+              </item>
+
+              <item price='15.00'>
+                  <food>
+
+                      <dezert> Nalesniki z dżemem</dezert>
+
+                  </food>
+              </item>
+
+              <item price='15.00'>
+                  <food>
+
+                      <dezert> Nalesniki z serem</dezert>
+
+                  </food>
+
+              </item>
+
+
+              <item price='13.00'>
+                  <food>
+
+                      <innefood> Tosty z serem i bekonem</innefood>
+
+                  </food>
+
+              </item>
+
           </menu>
     <pracownicy>
         <pracownik id="00001">
@@ -144,6 +244,36 @@
                   </kontakt>
 
                   <pensja>2500</pensja>
+
+        </pracownik>
+        <pracownik id="00100">
+
+            <imie>Roman</imie>
+
+            <nazwisko>Koc</nazwisko>
+
+            <stanowisko>sprzątający</stanowisko>
+
+            <adres>
+                <miejsce>Gdynia</miejsce>
+
+                <kodpocztowy>20-200</kodpocztowy>
+
+                <ulica>Lysicka</ulica>
+
+                <numer>121</numer>
+
+            </adres>
+
+            <kontakt>
+
+                <email>romankoc@gmail.com</email>
+                <email>coknamor@gmail.com</email>
+                <tel>23239324</tel>
+                <tel>23244333</tel>
+            </kontakt>
+
+            <pensja>2600</pensja>
 
         </pracownik>
   </pracownicy>
