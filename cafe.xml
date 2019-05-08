@@ -1,4 +1,5 @@
 <?xml version='1.0' encoding='ISO-8859-2'?>
+<?xml-stylesheet href="style.css"?>
 <!DOCTYPE cafe [
         <!ELEMENT cafe (menu|pracownicy)*>
             <!ELEMENT menu (item)*>
@@ -32,6 +33,7 @@
                     <!ELEMENT tel (#PCDATA)>
                 <!ELEMENT pensja (#PCDATA)>
         ]>
+
 <cafe>
           <menu>
                   <item price='4.00'>
