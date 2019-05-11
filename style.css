@@ -1,9 +1,13 @@
+body{
+
+}
+
 cafe{
-  display: flex;
-  flex-direction: row;
+  padding: 5%;
+  margin: 10%;
+  display: block;
+  float: top;
   font-family: Verdana, Arial;
-  padding:5%;
-  margin:5%;
   background-color: #28313E;
 }
 
@@ -11,24 +15,31 @@ menu{
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
   background-color: #F1F1F1;
   padding:1%;
   margin:1%;
   width:50%;
+  text-align: center;
 }
 
 item{
   word-wrap: break-word;
-  display: block;
-  float: center;
-  text-align: center;
+  display: inline-block;
+  float: top;
+  text-transform: uppercase;
   width:28%;
-  border: 1px solid black;
   padding:1%;
   margin:1%;
   float:left;
-
+  font-size: 11px;
 }
+
+item>drink>ml{
+background-color: bisque;
+}
+
 
 pracownicy{
   display: flex;
@@ -43,10 +54,11 @@ pracownicy{
 
 pracownik>imie,pracownik>nazwisko,pracownik>stanowisko,pracownik>kontakt,pracownik>adres,pracownik>pensja
 {
+  text-transform: uppercase;
   word-wrap: break-word;
   display: block;
-  float: center;
-  font-size: 12px;
+  float: top;
+  font-size: 10px;
   text-align: center;
   width: 90%;
   border: 1px solid black;
@@ -60,4 +72,15 @@ pracownik{
   padding:1%;
   margin:1%;
   background-color: #F0F8FF;
+}
+
+item:hover
+{
+  animation-name: onmouse;
+  animation-duration: 1s;
+}
+
+@keyframes onmouse{
+  from {background-color: #F1F1F1;}
+  to {background-color: #9DBDAE;}
 }

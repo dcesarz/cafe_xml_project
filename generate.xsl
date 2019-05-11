@@ -5,8 +5,40 @@
     <xsl:template match="/">
         <html>
             <body>
-                MENU
-                <xsl:apply-templates select="//menu"/>
+                <div class="header box">
+                <h1>Kawiarnia Blue</h1>
+                </div>
+
+                <div class="content">
+
+                    <div class="menu">
+                        <h1>MENU</h1>
+                        <div class="drink">
+                        <xsl:apply-templates select="//menu/item/drink"/>
+                        </div>
+
+                        <div class="food">
+                        <xsl:apply-templates select="//menu/item/food"/>
+                        </div>
+
+                        </div>
+
+                    <div class="pracownicy">
+
+                        <h1>PRACOWNICY</h1>
+                        <xsl:apply-templates select="//pracownicy"/>
+                    </div>
+
+                    <div class="npp">
+
+                        <h1>NAJLEPIEJ ZARABIAJACY PRACOWNIK</h1>
+                        <xsl:apply-templates select="//pracownicy"/>
+                    </div>
+
+
+
+                </div>
+
             </body>
         </html>
     </xsl:template>
