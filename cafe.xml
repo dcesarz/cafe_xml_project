@@ -19,7 +19,7 @@
             <!ELEMENT pracownicy (pracownik)*>
                 <!ELEMENT pracownik (imie|nazwisko|stanowisko|adres|kontakt|pensja)*>
                 <!ATTLIST pracownik
-                        id CDATA #REQUIRED>
+                        id ID #REQUIRED>
                 <!ELEMENT imie (#PCDATA)>
                 <!ELEMENT nazwisko (#PCDATA)>
                 <!ELEMENT stanowisko (#PCDATA)>
@@ -159,7 +159,7 @@
 
           </menu>
     <pracownicy>
-        <pracownik id="00001">
+        <pracownik id="a00001">
 
                   <imie>Monika</imie>
 
@@ -188,7 +188,7 @@
                   <pensja>5000</pensja>
 
         </pracownik>
-        <pracownik id="00010">
+        <pracownik id="a00010">
 
                   <imie>Marta</imie>
 
@@ -218,7 +218,7 @@
                   <pensja>3000</pensja>
 
         </pracownik>
-        <pracownik id="00011">
+        <pracownik id="a00011">
 
                   <imie>Norman</imie>
 
@@ -248,7 +248,7 @@
                   <pensja>2500</pensja>
 
         </pracownik>
-        <pracownik id="00100">
+        <pracownik id="a00100">
 
             <imie>Roman</imie>
 

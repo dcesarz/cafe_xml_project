@@ -4,6 +4,9 @@
     <xsl:output method="html" />
     <xsl:template match="/">
         <html>
+            <head>
+            <xsl:comment>Example.</xsl:comment>
+            </head>
             <body>
                 <div class="header box">
                 <h1>Kawiarnia Blue</h1>
