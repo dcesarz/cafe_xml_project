@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified">
+    <xsd:element name="cafe">
+        <xsd:complexType>
+            <xsd:sequence>
+                <xsd:element ref="menu"/>
+                <xsd:element ref="pracownicy"/>
+            </xsd:sequence>
+        </xsd:complexType>
+    </xsd:element>
+
+    <xsd:element name="menu">
+        <xsd:complexType>
+            <xsd:sequence>
+                <xsd:element maxOccurs="unbounded" ref="item"/>
+            </xsd:sequence>
+        </xsd:complexType>
+    </xsd:element>
+
+    <xsd:element name="item">
+        <xsd:complexType>
+            <xsd:choice>
+                <xsd:element ref="drink"/>
+                <xsd:element ref="food"/>
+            </xsd:choice>
+            <xsd:attribute name="price" use="required">
+                <xsd:simpleType>
+                    <xsd:restriction base="xsd:string">
+                        <xsd:pattern value="[0-9].\.[0-9]{2}"/>
+                    </xsd:restriction>
+                </xsd:simpleType>
+            </xsd:attribute>
+        </xsd:complexType>
+    </xsd:element>
+
+    <xsd:element name="drink">
+        <xsd:complexType>
+            <xsd:sequence>
+                <xsd:choice>
+                    <xsd:element ref="herbata"/>
+                    <xsd:element ref="innedrink"/>
+                    <xsd:element ref="kawa"/>
+                </xsd:choice>
+                <xsd:element maxOccurs="unbounded" ref="ml"/>
+            </xsd:sequence>
+        </xsd:complexType>
+    </xsd:element>
+
+    <xsd:element name="herbata" type="xsd:string"/>
+    <xsd:element name="innedrink" type="xsd:string"/>
+    <xsd:element name="kawa" type="xsd:string"/>
+    <xsd:element name="ml">
+
+        <xsd:complexType>
+            <xsd:simpleContent>
+                <xsd:extension base="xsd:integer">
+                    <xsd:attribute name="priceinc" use="required" type="xsd:decimal"/>
+                </xsd:extension>
+            </xsd:simpleContent>
+        </xsd:complexType>
+
+    </xsd:element>
+    <xsd:element name="food">
+        <xsd:complexType>
+            <xsd:choice>
+                <xsd:element ref="dezert"/>
+                <xsd:element ref="innefood"/>
+            </xsd:choice>
+        </xsd:complexType>
+    </xsd:element>
+
+    <xsd:element name="dezert" type="xsd:string"/>
+    <xsd:element name="innefood" type="xsd:string"/>
+
+    <xsd:element name="pracownicy">
+        <xsd:complexType>
+            <xsd:sequence>
+                <xsd:element maxOccurs="unbounded" ref="pracownik"/>
+            </xsd:sequence>
+        </xsd:complexType>
+    </xsd:element>
+
+    <xsd:element name="pracownik">
+        <xsd:complexType>
+            <xsd:sequence>
+                <xsd:element ref="imie"/>
+                <xsd:element ref="nazwisko"/>
+                <xsd:element ref="stanowisko"/>
+                <xsd:element ref="adres"/>
+                <xsd:element ref="kontakt"/>
+                <xsd:element ref="pensja"/>
+            </xsd:sequence>
+            <xsd:attribute name="id" use="required" type="xsd:integer"/>
+        </xsd:complexType>
+    </xsd:element>
+
+    <xsd:element name="imie" type="xsd:string"/>
+    <xsd:element name="nazwisko" type="xsd:string"/>
+    <xsd:element name="stanowisko" type="xsd:string"/>
+
+
+    <xsd:element name="adres">
+
+        <xsd:complexType>
+            <xsd:sequence>
+                <xsd:element ref="miejsce"/>
+                <xsd:element ref="kodpocztowy"/>
+                <xsd:element ref="ulica"/>
+                <xsd:element ref="numer"/>
+            </xsd:sequence>
+        </xsd:complexType>
+
+    </xsd:element>
+
+
+    <xsd:element name="miejsce" type="xsd:string"/>
+    <xsd:element name="kodpocztowy">
+        <xsd:simpleType>
+            <xsd:restriction base="xsd:string">
+                <xsd:pattern value="[0-9]{2}-[0-9]{3}"/>
+            </xsd:restriction>
+        </xsd:simpleType>
+    </xsd:element>
+    <xsd:element name="ulica" type="xsd:string"/>
+    <xsd:element name="numer" type="xsd:integer"/>
+
+    <xsd:element name="kontakt">
+        <xsd:complexType>
+            <xsd:sequence>
+                <xsd:element maxOccurs="3" ref="email"/>
+                <xsd:element maxOccurs="3" ref="tel"/>
+            </xsd:sequence>
+        </xsd:complexType>
+    </xsd:element>
+    <xsd:element name="email">
+        <xsd:simpleType>
+            <xsd:restriction base="xsd:string">
+                <xsd:pattern value="[A-Za-z0-9]*@[A-Za-z0-9]*\.[A-Za-z0-9]*"/>
+            </xsd:restriction>
+        </xsd:simpleType>
+    </xsd:element>
+    <xsd:element name="tel">
+        <xsd:simpleType>
+            <xsd:restriction base="xsd:string">
+                <xsd:pattern value="[0-9]{9}"/>
+            </xsd:restriction>
+        </xsd:simpleType>
+    </xsd:element>
+    <xsd:element name="pensja">
+    <xsd:simpleType>
+        <xsd:restriction base="xsd:string">
+            <xsd:pattern value="[0-9].\.[0-9]{2}"/>
+        </xsd:restriction>
+    </xsd:simpleType>
+    </xsd:element>
+
+</xsd:schema>
+

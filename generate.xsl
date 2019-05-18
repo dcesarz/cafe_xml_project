@@ -17,11 +17,28 @@
                     <div class="menu">
                         <h1>MENU</h1>
                         <div class="drink">
-                        <xsl:apply-templates select="//menu/item/drink"/>
+
+                            <xsl:for-each select="//menu/item/drink">
+                                <li>
+                               <xsl:choose>
+                                   <xsl:when test="kawa"><xsl:value-of select="kawa"/></xsl:when>
+                                   <xsl:when test="herbata"><xsl:value-of select="herbata"/></xsl:when>
+                                   <xsl:when test="innedrink"><xsl:value-of select="innedrink"/></xsl:when>
+                               </xsl:choose>
+                                </li>
+                            </xsl:for-each>
+
                         </div>
 
                         <div class="food">
-                        <xsl:apply-templates select="//menu/item/food"/>
+                            <xsl:for-each select="//menu/item/food">
+                                <li>
+                                    <xsl:choose>
+                                        <xsl:when test="dezert"><xsl:value-of select="dezert"/></xsl:when>
+                                        <xsl:when test="innefood"><xsl:value-of select="innefood"/></xsl:when>
+                                    </xsl:choose>
+                                </li>
+                            </xsl:for-each>
                         </div>
 
                         </div>
@@ -34,8 +51,32 @@
 
                     <div class="npp">
 
-                        <h1>NAJLEPIEJ ZARABIAJACY PRACOWNIK</h1>
-                        <xsl:apply-templates select="//pracownicy"/>
+                        <h1>PENSJA WLASCICIELKI</h1>
+
+                            <xsl:apply-templates select="//pracownicy/pracownik[@id='a00001']/pensja"/>
+
+                        <h1>BARISTY</h1>
+
+
+                        <xsl:for-each select="//pracownicy/pracownik[stanowisko='barista']">
+                                <li>
+                                <span style="color:purple">
+
+                                    <xsl:value-of select="imie"/>&#160;<xsl:value-of select="nazwisko"/>
+
+                                    </span>
+                                 </li>
+
+
+                        </xsl:for-each>
+
+                        <h1>
+
+
+
+                        </h1>
+
+
                     </div>
 
 

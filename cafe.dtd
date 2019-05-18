@@ -1,0 +1,32 @@
+<?xml version='1.0' encoding='ISO-8859-2'?>
+        <!ELEMENT cafe (menu|pracownicy)*>
+        <!ELEMENT menu (item)*>
+        <!ELEMENT item (drink|food)*>
+        <!ATTLIST item
+                price CDATA #REQUIRED>
+        <!ELEMENT drink (kawa|ml|innedrink|herbata)*>
+        <!ELEMENT kawa (#PCDATA)>
+        <!ELEMENT ml (#PCDATA)>
+        <!ATTLIST ml
+                priceinc CDATA #REQUIRED>
+        <!ELEMENT innedrink (#PCDATA)>
+        <!ELEMENT herbata (#PCDATA)>
+        <!ELEMENT food (dezert|innefood)*>
+        <!ELEMENT dezert (#PCDATA)>
+        <!ELEMENT innefood (#PCDATA)>
+        <!ELEMENT pracownicy (pracownik)*>
+        <!ELEMENT pracownik (imie|nazwisko|stanowisko|adres|kontakt|pensja)*>
+        <!ATTLIST pracownik
+                id ID #REQUIRED>
+        <!ELEMENT imie (#PCDATA)>
+        <!ELEMENT nazwisko (#PCDATA)>
+        <!ELEMENT stanowisko (#PCDATA)>
+        <!ELEMENT adres (miejsce|kodpocztowy|ulica|numer)*>
+        <!ELEMENT miejsce (#PCDATA)>
+        <!ELEMENT kodpocztowy (#PCDATA)>
+        <!ELEMENT ulica (#PCDATA)>
+        <!ELEMENT numer (#PCDATA)>
+        <!ELEMENT kontakt (email|tel)*>
+        <!ELEMENT email (#PCDATA)>
+        <!ELEMENT tel (#PCDATA)>
+        <!ELEMENT pensja (#PCDATA)>
