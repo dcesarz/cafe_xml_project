@@ -8,7 +8,9 @@ cafe{
   display: block;
   float: top;
   font-family: Verdana, Arial;
-  background-color: #28313E;
+  background-image: url("memphis-mini-dark.png");
+  cursor: url("cursor.png"), auto;
+
 }
 
 menu{
@@ -34,6 +36,7 @@ item{
   margin:1%;
   float:left;
   font-size: 11px;
+  text-shadow: 2px 2px #ffdaf3;
 }
 
 item>drink>ml{
@@ -50,6 +53,7 @@ pracownicy{
   padding:1%;
   margin:1%;
   justify-content: center;
+
 }
 
 pracownik>imie,pracownik>nazwisko,pracownik>stanowisko,pracownik>kontakt,pracownik>adres,pracownik>pensja
@@ -64,6 +68,7 @@ pracownik>imie,pracownik>nazwisko,pracownik>stanowisko,pracownik>kontakt,pracown
   border: 1px solid black;
   padding:1%;
   margin:1%;
+  text-shadow: 2px 2px #ffdaf3;
 }
 
 pracownik{

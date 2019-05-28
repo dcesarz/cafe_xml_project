@@ -1,32 +1,37 @@
 <?xml version='1.0' encoding='ISO-8859-2'?>
+        <!ENTITY % str "#PCDATA">
+        <!ENTITY % r "#REQUIRED">
+
         <!ELEMENT cafe (menu|pracownicy)*>
+
         <!ELEMENT menu (item)*>
         <!ELEMENT item (drink|food)*>
         <!ATTLIST item
-                price CDATA #REQUIRED>
+                price CDATA #IMPLIED>
         <!ELEMENT drink (kawa|ml|innedrink|herbata)*>
-        <!ELEMENT kawa (#PCDATA)>
-        <!ELEMENT ml (#PCDATA)>
+        <!ELEMENT kawa (%str;)>
+        <!ELEMENT ml (%str;)>
         <!ATTLIST ml
-                priceinc CDATA #REQUIRED>
-        <!ELEMENT innedrink (#PCDATA)>
-        <!ELEMENT herbata (#PCDATA)>
+                priceinc CDATA #IMPLIED>
+        <!ELEMENT innedrink (%str;)>
+        <!ELEMENT herbata (%str;)>
         <!ELEMENT food (dezert|innefood)*>
-        <!ELEMENT dezert (#PCDATA)>
-        <!ELEMENT innefood (#PCDATA)>
+        <!ELEMENT dezert (%str;)>
+        <!ELEMENT innefood (%str;)>
         <!ELEMENT pracownicy (pracownik)*>
         <!ELEMENT pracownik (imie|nazwisko|stanowisko|adres|kontakt|pensja)*>
         <!ATTLIST pracownik
                 id ID #REQUIRED>
-        <!ELEMENT imie (#PCDATA)>
-        <!ELEMENT nazwisko (#PCDATA)>
-        <!ELEMENT stanowisko (#PCDATA)>
+        <!ELEMENT imie (%str;)>
+        <!ELEMENT nazwisko (%str;)>
+        <!ELEMENT stanowisko (%str;)>
         <!ELEMENT adres (miejsce|kodpocztowy|ulica|numer)*>
-        <!ELEMENT miejsce (#PCDATA)>
-        <!ELEMENT kodpocztowy (#PCDATA)>
-        <!ELEMENT ulica (#PCDATA)>
-        <!ELEMENT numer (#PCDATA)>
+        <!ELEMENT miejsce (%str;)>
+        <!ELEMENT kodpocztowy (%str;)>
+        <!ELEMENT ulica (%str;)>
+        <!ELEMENT numer (%str;)>
         <!ELEMENT kontakt (email|tel)*>
-        <!ELEMENT email (#PCDATA)>
-        <!ELEMENT tel (#PCDATA)>
-        <!ELEMENT pensja (#PCDATA)>
+        <!ELEMENT email (%str;)>
+        <!ELEMENT tel (%str;)>
+        <!ELEMENT pensja (%str;)>
+        <![IGNORE[ <!ELEMENT image (%str;)>]]>
