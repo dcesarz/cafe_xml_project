@@ -148,11 +148,11 @@
                   <kontakt>
 
                     <email>monikatuzin@gmail.com</email>
-                    <tel>34883958</tel>
+                    <tel>348839158</tel>
 
                   </kontakt>
 
-                  <pensja>5000</pensja>
+                  <pensja>5000.00</pensja>
 
         </pracownik>
         <pracownik id="a00010">
@@ -178,11 +178,11 @@
 
                     <email>mtuzin@gmail.com</email>
                     <email>allweretaken3434@gmail.com</email>
-                    <tel>2323234</tel>
+                    <tel>232323434</tel>
 
                   </kontakt>
 
-                  <pensja>3000</pensja>
+                  <pensja>3000.00</pensja>
 
         </pracownik>
         <pracownik id="a00011">
@@ -208,11 +208,11 @@
 
                     <email>kkoc@gmail.com</email>
                     <email>moremails@gmail.com</email>
-                    <tel>2323234</tel>
-                    <tel>2324433</tel>
+                    <tel>232323422</tel>
+                    <tel>232443322</tel>
                   </kontakt>
 
-                  <pensja>2500</pensja>
+                  <pensja>2500.00</pensja>
 
         </pracownik>
         <pracownik id="a00100">
@@ -238,11 +238,11 @@
 
                 <email>romankoc@gmail.com</email>
                 <email>coknamor@gmail.com</email>
-                <tel>23239324</tel>
-                <tel>23244333</tel>
+                <tel>232393242</tel>
+                <tel>232443332</tel>
             </kontakt>
 
-            <pensja>2600</pensja>
+            <pensja>2600.00</pensja>
 
         </pracownik>
   </pracownicy>

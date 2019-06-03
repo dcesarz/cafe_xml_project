@@ -18,10 +18,10 @@
         <!ELEMENT food (dezert|innefood)*>
         <!ELEMENT dezert (%str;)>
         <!ELEMENT innefood (%str;)>
-        <!ELEMENT pracownicy (pracownik)*>
+        <!ELEMENT pracownicy (pracownik)+>
         <!ELEMENT pracownik (imie|nazwisko|stanowisko|adres|kontakt|pensja)*>
         <!ATTLIST pracownik
-                id ID #REQUIRED>
+                id ID %r;>
         <!ELEMENT imie (%str;)>
         <!ELEMENT nazwisko (%str;)>
         <!ELEMENT stanowisko (%str;)>

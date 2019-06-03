@@ -38,6 +38,7 @@
                                </xsl:choose>
                                     </li>
                                 </ol>
+
                             </xsl:for-each>
 
                         </div>
@@ -84,7 +85,7 @@
 
 
                         <xsl:for-each select="//pracownicy/pracownik[stanowisko='barista']">
-                                <ol>
+                                <ul>
                                 <li>
                                 <span style="color:grey">
 
@@ -92,7 +93,7 @@
 
                                     </span>
                                 </li>
-                                </ol>
+                                </ul>
 
 
                         </xsl:for-each>
